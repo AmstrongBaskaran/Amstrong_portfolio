@@ -67,7 +67,7 @@
   width: 100%;
   object-fit: cover;
   margin-top: 2px;
-  animation: moveBottom 10s linear infinite;
+  animation: moveBottom 15s linear infinite;
 }
 @keyframes moveBottom {
   from{
@@ -81,7 +81,7 @@
   height: 150px;
   width: 100%;
   border: 2px solid white;
-  animation: moveTop 10s linear infinite;
+  animation: moveTop 15s linear infinite;
 }
 @keyframes moveTop {
   0% {
