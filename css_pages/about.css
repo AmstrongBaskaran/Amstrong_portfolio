@@ -65,11 +65,11 @@
   width: 100%;
   object-fit: cover;
   margin-top: 2px;
-  animation: moveBottom 5s linear infinite;
+  animation: moveBottom 15s linear infinite;
 }
 @keyframes moveBottom {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(-300%);
   }
   100% {
     transform: translateY(0%);
@@ -79,14 +79,14 @@
   height: 150px;
   width: 100%;
   border: 2px solid white;
-  animation: moveTop 5s linear infinite;
+  animation: moveTop 15s linear infinite;
 }
 @keyframes moveTop {
   0% {
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-400%);
   }
 }
 .imglst2 img {
