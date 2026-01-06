@@ -51,6 +51,7 @@
   width: 25%;
   display: flex;
   justify-content: space-between;
+  pointer-events: none;
 }
 .imgbox {
   height: 100%;
