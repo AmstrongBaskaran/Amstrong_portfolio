@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   scroll-behavior: smooth;
 }
 .header {
@@ -47,56 +47,78 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .heroimg {
-  height: 400px;
-  width: 25%;
+  margin-top: 60px;
+  height: 430px;
+  width: 23%;
   display: flex;
   justify-content: space-between;
-  pointer-events: none;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.346);
+  position: relative;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 32 32'%3E%3C!-- Icon from Fluent UI System Icons by Microsoft Corporation - https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE --%3E%3Cpath fill='%23ff0000' d='M9.391 2.32C8.42 1.56 7 2.253 7 3.486V28.41c0 1.538 1.966 2.18 2.874.938l6.225-8.523a2 2 0 0 1 1.615-.82h9.69c1.512 0 2.17-1.912.978-2.844z'/%3E%3C/svg%3E"), pointer;
+  transform: rotate(5deg);
+  transition: transform .5s;
 }
-.imgbox {
-  height: 100%;
-  width: 49.5%;
-  overflow: scroll;
-}
-.imglst1 {
-  height: 200px;
+
+.myimg{
+  height: 300px;
   width: 100%;
-  border: 2px solid white;
+  background-color: rgb(186, 186, 186);
+  margin: 50px 20px 0 20px;
 }
-.imglst1 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  margin-top: 2px;
-  animation: moveBottom 15s linear infinite;
+.childimg{
+  height: 120px;
+  width: 120px;
+  background-color: #fff99f;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  transform: rotate(-10deg);
+  clip-path: polygon(0px 0px, 120px 0px, 120px 100px, 100px 120px, 0px 120px);
 }
-@keyframes moveBottom {
-  from{
-    transform: translateY(-300%);
-  }
-  to{
-    transform: translateY(0%);
-  }
+.heroimg:hover{
+  transform: rotate(0deg);
 }
-.imglst2 {
-  height: 150px;
-  width: 100%;
-  border: 2px solid white;
-  animation: moveTop 15s linear infinite;
-}
-@keyframes moveTop {
-  0% {
-    transform: translateY(0%);
-  }
-  100% {
-    transform: translateY(-400%);
-  }
-}
-.imglst2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .herocont h1 {
   font-size: 50px;
