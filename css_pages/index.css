@@ -2,7 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   scroll-behavior: smooth;
 }
 .header {
