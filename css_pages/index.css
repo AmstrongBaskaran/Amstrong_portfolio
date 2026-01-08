@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -10,6 +11,10 @@
   border: 1.4px solid black;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  background-color: white;
 }
 .tamilletter {
   margin-left: 50px;
@@ -79,7 +84,18 @@
   left: -50px;
   transform: rotate(-10deg);
   clip-path: polygon(0px 0px, 120px 0px, 120px 100px, 100px 120px, 0px 120px);
+   font-family: 'Patrick Hand', cursive;
 }
+.childimg p{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.childimg span{
+  font-weight: bold;
+
+}
+
 .heroimg:hover {
   transform: rotate(0deg);
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 32 32'%3E%3C!-- Icon from Fluent UI System Icons by Microsoft Corporation - https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE --%3E%3Cpathfill='chocolate' d='M9.391 2.32C8.42 1.56 7 2.253 7 3.486V28.41c0 1.538 1.966 2.18 2.874.938l6.225-8.523a2 2 0 0 1 1.615-.82h9.69c1.512 0 2.17-1.912.978-2.844z'/%3E%3C/svg%3E"),
