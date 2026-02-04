@@ -165,11 +165,17 @@
   width: 100%;
   border: 1px solid black;
   margin-top: 10px;
+  overflow: hidden;
 }
-.skillset div {
+.scrolling-container {
   display: flex;
-  justify-content: space-between;
+  width: max-content;
   margin-top: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+.scrolling-container:hover {
+  animation-play-state: paused;
 }
 .skillset h2 {
   text-align: center;
@@ -181,14 +187,14 @@
 .icon {
   height: 80px;
   width: 80px;
-  animation: moveLeft 3s linear infinite;
+  margin: 0 50px;
 }
-@keyframes moveLeft {
+@keyframes scroll {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
 }
 .icon img {
